@@ -4,7 +4,7 @@ import (
 	"azatoth_game/lib"
 )
 
-// Test change
+// Test changer
 
 func main() {
 
