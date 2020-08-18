@@ -8,7 +8,7 @@ func main() {
 
 	lib.Player()
 
-	// Block to get player data
+	// block to get player data
 	/*name, race, home, class := lib.Strings()
 	fmt.Println(name)
 	_ = race
