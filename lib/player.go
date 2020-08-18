@@ -18,12 +18,14 @@ func Player() {
 	fmt.Printf("==============\n\n")
 
 	// Select race for player
-	fmt.Printf("What race?\n- Human\n- Blood Elf\n- Draenei\n>> ")
+	fmt.Printf("What race?\n- Human\n- Troll\n- Blood Elf\n- Draenei\n>> ")
 	fmt.Scan(&race)
 	fmt.Printf("==============\n\n")
 	switch race {
 	case "Human":
 		home = "Stormwind"
+	case "Troll":
+		home = "Orgrimmar"
 	case "Blood Elf":
 		home = "Silvermoon"
 	case "Draenei":
