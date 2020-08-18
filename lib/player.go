@@ -39,7 +39,7 @@ func Player() {
 		fmt.Printf("==============\n\n")
 		fmt.Printf("- Warrior:\n    A Warrior can handle heavy swords,\n    shields and fights with bloodthirst\n    until the enemies are all down\n" +
 			"- Mage:\n    Mages use mana as their ressource\n    and can freeze or transform their\n    enemies directly\n" +
-			"- Paladin:\n    Paladins connect to the power of light\n    to heal themselve or fight their enemies\n    with strokes of energy\n" +
+			"- Paladin:\n    Paladins connect to their power of light\n    to heal themselve or fight their enemies\n    with strokes of energy\n" +
 			"===========================================\nWhat class?\n- Warrior\n- Mage\n- Paladin\n>> ")
 		fmt.Scan(&class)
 	}
