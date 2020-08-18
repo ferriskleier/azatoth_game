@@ -4,8 +4,6 @@ import (
 	"azatoth_game/lib"
 )
 
-// Test changerdwwd
-
 func main() {
 
 	lib.Player()
