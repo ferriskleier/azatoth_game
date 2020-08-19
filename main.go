@@ -1,11 +1,12 @@
 package main
 
 import (
-	"azatoth_game/lib"
+	"azatoth_game/lib/game"
+	"azatoth_game/lib/player"
 )
 
 func main() {
 
-	lib.Player()
-	lib.Game()
+	player.Player()
+	game.Game()
 }
