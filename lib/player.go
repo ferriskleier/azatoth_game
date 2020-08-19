@@ -31,13 +31,16 @@ func Player() {
 // Race for player
 func Race() {
 	fmt.Printf("What race?\n- Human\n- Troll\n- Blood Elf\n- Draenei\n>> ")
-	fmt.Scan(&race)
+	fmt.Scanln(&race)
 	fmt.Printf("==============\n\n")
 	if race == "Human" {
 		home = "Stormwind"
 	} else if race == "Troll" {
 		home = "Orgrimmar"
-	} else if race == "Blood Elf" {
+	} else if race == "Blood" {
+		fmt.Scanln()
+		fmt.Scanln()
+		race = "Blood Elf"
 		home = "Silvermoon"
 	} else if race == "Draenei" {
 		home = "the Exodar"
@@ -61,12 +64,11 @@ func Class() {
 	} else if newclass == "Paladin" {
 		class = "Paladin"
 	} else if newclass == "Help" {
-		fmt.Printf("==============\n\n")
 		fmt.Printf("- Warrior:\n    A Warrior can handle heavy swords,\n    shields and fights with bloodthirst\n    until the enemies are all down\n" +
 			"- Mage:\n    Mages use mana as their ressource\n    and can freeze or transform their\n    enemies directly\n" +
 			"- Paladin:\n    Paladins connect to their power of light\n    to heal themselve or fight their enemies\n    with strokes of energy\n" +
-			"===========================================\nWhat class?\n- Warrior\n- Mage\n- Paladin\n>> ")
-		fmt.Scan(&class)
+			"===========================================\n\n")
+		Class()
 	} else {
 		fmt.Println("Invalid input, try again")
 		fmt.Printf("==============\n\n")
