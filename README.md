@@ -5,5 +5,8 @@ TODO:
 - add more races, classes
 - finish schnottzlanding
 
-Levels:
-- 
+LEVELS:
+- schnottz's landing
+- silithus coast caves
+- ahn'qiraj caves
+
