@@ -72,7 +72,6 @@ func Class() {
 		fmt.Printf("==============\n\n")
 		Class()
 	}
-	fmt.Printf("==============\n\n")
 }
 
 // Strings to export player data
