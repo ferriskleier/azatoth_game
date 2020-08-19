@@ -52,7 +52,7 @@ func Schnottzslanding() {
 		"There we will moor the ship and preapare in the bay we\n" +
 		"located earlier. You can rest until then, it takes us a\n" +
 		"while to arrive at the location. I count on you, " + class + ".\n\n" +
-		"(enter to sleep)\n")
+		"(press enter to sleep)\n")
 	fmt.Scanln()
 
 	for i := 0; i < 5; i++ {
@@ -64,10 +64,26 @@ func Schnottzslanding() {
 		"~x~X~X`X~x~x`x~X~XX~X~X~x`X~X~X~X\n" +
 		"  ' `' `'`''` '` '`' `'` '`' '`'`\n\n")
 	time.Sleep(900 * time.Millisecond)
-	fmt.Printf("(enter to continue)\n")
 	fmt.Scanln()
-	fmt.Println("\n" +
-		"Harrison Jones:" +
-		"===============" +
-		"What happened")
+	fmt.Printf("" +
+		"Harrison Jones:\n" +
+		"===============\n" +
+		"What happened?\n" +
+		"It seems we crashed. But why? The coast should be one\n" +
+		"hour away.\n")
+	fmt.Scanln()
+	fmt.Printf("*Harrison and you run up to the deck, to see what happened*\n")
+	fmt.Scanln()
+	fmt.Printf("*A heavy storm slams on the ship and waves crash on it's\n" +
+		"sides. You see the upper deck full of people and tauren\n" +
+		"shamans trying to keep the water from flooding the ship*\n")
+	fmt.Scanln()
+	fmt.Printf("Harrison Jones:\n" +
+		"===============\n" +
+		"Well, we obviously crashed into the cliffs of Silithus, but\n" +
+		"as I already said we should be far away from the coast.\n")
+	fmt.Scanln()
+	fmt.Printf("*The captain of the ship, Thasarah Vineglade, walks toward\n" +
+		"you and Harrison*\n")
+	fmt.Scanln()
 }
