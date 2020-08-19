@@ -2,6 +2,7 @@ package main
 
 import (
 	"azatoth_game/lib"
+	"fmt"
 )
 
 func main() {
@@ -9,11 +10,9 @@ func main() {
 	lib.Player()
 
 	// block to get player data
-	/*name, race, home, class := lib.Strings()
+	name, race, home, class := lib.Strings()
 	fmt.Println(name)
-	_ = race
-	_ = home
-	_ = class*/
-
-	// erstes Level
+	fmt.Println(race)
+	fmt.Println(home)
+	fmt.Println(class)
 }
