@@ -18,21 +18,7 @@ func Player() {
 	fmt.Printf("==============\n\n")
 
 	// Select race for player
-	fmt.Printf("What race?\n- Human\n- Troll\n- Blood Elf\n- Draenei\n>> ")
-	fmt.Scan(&race)
-	fmt.Printf("==============\n\n")
-	switch race {
-	case "Human":
-		home = "Stormwind"
-	case "Troll":
-		home = "Orgrimmar"
-	case "Blood Elf":
-		home = "Silvermoon"
-	case "Draenei":
-		home = "the Exodar"
-	default:
-		home = "none"
-	}
+	Race()
 
 	// Select class for player
 	fmt.Printf("What class?\n- Warrior\n- Mage\n- Paladin\n- or type 'Help' to get more Information\n>> ")
@@ -53,6 +39,25 @@ func Player() {
 		"Press Enter to start the adventure\n" +
 		"==================================\n\n")
 	fmt.Scanln()
+}
+
+// Race for player
+func Race() {
+	fmt.Printf("What race?\n- Human\n- Troll\n- Blood Elf\n- Draenei\n>> ")
+	fmt.Scan(&race)
+	fmt.Printf("==============\n\n")
+	if race == "Human" {
+		home = "Stormwind"
+	} else if race == "Troll" {
+		home = "Orgrimmar"
+	} else if race == "Blood Elf" {
+		home = "Silvermoon"
+	} else if race == "Draenei" {
+		home = "the Exodar"
+	} else {
+		fmt.Println("Invalid input, try again")
+		Race()
+	}
 }
 
 // Strings to export player data
