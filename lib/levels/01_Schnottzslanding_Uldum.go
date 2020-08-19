@@ -3,6 +3,7 @@ package levels
 import (
 	"azatoth_game/lib/player"
 	"fmt"
+	"time"
 )
 
 // Schnottzslanding level
@@ -16,6 +17,7 @@ func Schnottzslanding() {
 	for i := 0; i < 100; i++ {
 		fmt.Println()
 	}
+
 	fmt.Printf("=================================\n" +
 		"    Chapter 1: The Shattering\n" +
 		"=================================\n\n" +
@@ -36,6 +38,7 @@ func Schnottzslanding() {
 	for i := 0; i < 100; i++ {
 		fmt.Println()
 	}
+
 	fmt.Printf("============================================\n" +
 		"Location: 'Dry Seaheart', Schnottz's Landing\n" +
 		"============================================\n\n\n" +
@@ -48,5 +51,23 @@ func Schnottzslanding() {
 		"and heading to the hilly, southern coast of Silithus.\n" +
 		"There we will moor the ship and preapare in the bay we\n" +
 		"located earlier. You can rest until then, it takes us a\n" +
-		"while to arrive at the location. I count on you, " + class + ".\n\n")
+		"while to arrive at the location. I count on you, " + class + ".\n\n" +
+		"(enter to sleep)\n")
+	fmt.Scanln()
+
+	for i := 0; i < 5; i++ {
+		time.Sleep(1100 * time.Millisecond)
+		fmt.Println("  ...")
+	}
+
+	fmt.Printf("\n  , ., , ., . ,. ,. ,. , ., , .\n" +
+		"~x~X~X`X~x~x`x~X~XX~X~X~x`X~X~X~X\n" +
+		"  ' `' `'`''` '` '`' `'` '`' '`'`\n\n")
+	time.Sleep(900 * time.Millisecond)
+	fmt.Printf("(enter to continue)\n")
+	fmt.Scanln()
+	fmt.Println("\n" +
+		"Harrison Jones:" +
+		"===============" +
+		"What happened")
 }

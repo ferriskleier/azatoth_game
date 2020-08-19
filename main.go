@@ -2,11 +2,10 @@ package main
 
 import (
 	"azatoth_game/lib/game"
-	"azatoth_game/lib/player"
 )
 
 func main() {
 
-	player.Player()
+	// player.Player()
 	game.Game()
 }
