@@ -1,6 +1,9 @@
 # azatoth_game
 
-To play:
+TODO:
+- finish intro-level
+- add more races, classes
+- finish schnottzlanding
 
-- Install Go on golang.org
-- start game with go run main.go
+Levels:
+- 
