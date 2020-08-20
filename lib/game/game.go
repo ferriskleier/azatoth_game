@@ -19,5 +19,5 @@ func Game() {
 	levels.Schnottzslanding(name, class)
 
 	// second level
-	levels.SilithusCoast()
+	levels.Silithuscoast()
 }
