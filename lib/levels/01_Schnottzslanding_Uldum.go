@@ -1,20 +1,26 @@
 package levels
 
 import (
-	"azatoth_game/lib/player"
 	"fmt"
 	"time"
 )
 
 // Schnottzslanding level
-func Schnottzslanding() {
-
-	// block to get player data
-	name, race, home, class := player.Strings()
-	_ = race
-	_ = home
+func Schnottzslanding(name string, class string) {
 
 	// Intro
+	SchnottzslandingIntro(name)
+
+	// Part 1
+	Schnottzslanding01(name, class)
+
+	// Part 2
+	Schnottzslanding02(name)
+}
+
+// SchnottzslandingIntro do
+func SchnottzslandingIntro(name string) {
+
 	for i := 0; i < 100; i++ {
 		fmt.Println()
 	}
@@ -35,8 +41,10 @@ func Schnottzslanding() {
 		"Press enter to continue\n" +
 		"=======================\n\n\n")
 	fmt.Scanln()
+}
 
-	// Part 1
+// Schnottzslanding01 do
+func Schnottzslanding01(name string, class string) {
 	for i := 0; i < 100; i++ {
 		fmt.Println()
 	}
@@ -55,10 +63,12 @@ func Schnottzslanding() {
 		"while to arrive at the location. I count on you, " + class + ".\n\n" +
 		"(press enter to sleep)\n")
 	fmt.Scanln()
+}
 
-	// Part 2
+// Schnottzslanding02 do
+func Schnottzslanding02(name string) {
 	for i := 0; i < 5; i++ {
-		time.Sleep(1100 * time.Millisecond)
+		time.Sleep(900 * time.Millisecond)
 		fmt.Println("  ...")
 	}
 	fmt.Printf("\n  , ., , ., . ,. ,. ,. , ., , .\n" +
@@ -87,4 +97,19 @@ func Schnottzslanding() {
 	fmt.Printf("*The captain of the ship, Thasarah Vineglade, walks toward\n" +
 		"you and Harrison*\n")
 	fmt.Scanln()
+	fmt.Printf(
+		"Tasarah Vineglade:\n" +
+			"==================\n" +
+			"The storm pushed us to the coast, we lost all control and\n" +
+			"here we are. We will try to save the ship from sinking.\n" +
+			"You, " + name + " and a few others are going on the land\n" +
+			"and try to find a safe spot. Keep your eyes open, Harrison,\n" +
+			"C'thun may be behind this heavy storm and we are still\n" +
+			"waiting for the troops to arrive from the other side.\n" +
+			"My crew will do everything to find where we are and how far\n" +
+			"it is to the bay. Go on, we can't afford to loose time.\n")
+	fmt.Scanln()
+	fmt.Printf("Harrison Jones:\n" +
+		"===============\n" +
+		"Alright, let's go, " + name + "\n\n")
 }

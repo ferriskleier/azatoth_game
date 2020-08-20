@@ -46,7 +46,7 @@ func IntroYes() {
 	fmt.Scanln()
 	fmt.Printf("  ...\n\ncontinue the game, very good.\n")
 	fmt.Scanln()
-	fmt.Printf("When the game gives you a choise, just type one of\n" +
+	fmt.Printf("When the game gives you a choice, just type one of\n" +
 		"the given answers like you did when I asked you if\n" +
 		"you want to play this intro.\n" +
 		"This is a simple Quest, you have to go to the next\n" +
