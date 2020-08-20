@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// Schnottzslanding level
+// Schnottzslanding level 1
 func Schnottzslanding(name string, class string) {
 
 	// Intro
