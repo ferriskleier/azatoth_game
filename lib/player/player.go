@@ -38,18 +38,20 @@ func Race() {
 	fmt.Printf("What race?\n- Human\n- Troll\n- Blood Elf\n- Draenei\n>> ")
 	fmt.Scanln(&race)
 	fmt.Printf("==============\n\n")
-	if race == "Human" {
+
+	switch race {
+	case "Human":
 		home = "Stormwind"
-	} else if race == "Troll" {
+	case "Troll":
 		home = "Orgrimmar"
-	} else if race == "Blood" {
+	case "Blood":
 		fmt.Scanln()
 		fmt.Scanln()
 		race = "Blood Elf"
 		home = "Silvermoon"
-	} else if race == "Draenei" {
+	case "Draenei":
 		home = "the Exodar"
-	} else {
+	default:
 		fmt.Println("Invalid input, try again\n" + "==============\n\n")
 		Race()
 	}
@@ -58,25 +60,28 @@ func Race() {
 // Class for player
 func Class() {
 	var newclass string
+
 	fmt.Printf("What class?\n- Warrior\n- Hunter\n- Mage\n- Paladin\n- or type 'Help' to get more Information\n>> ")
 	fmt.Scan(&newclass)
 	fmt.Printf("==============\n\n")
-	if newclass == "Warrior" {
+
+	switch newclass {
+	case "Warrior":
 		class = "Warrior"
-	} else if newclass == "Hunter" {
+	case "Hunter":
 		class = "Hunter"
-	} else if newclass == "Mage" {
+	case "Mage":
 		class = "Mage"
-	} else if newclass == "Paladin" {
+	case "Paladin":
 		class = "Paladin"
-	} else if newclass == "Help" {
+	case "Help":
 		fmt.Printf("- Warrior:\n    A Warrior can handle heavy swords,\n    shields and fights with bloodthirst\n    until the enemies are all down\n" +
 			"- Hunter:\n    Hunters tame wild animals to fight\n    side by side with them. Your animal\n    depends on your chosen race\n" +
 			"- Mage:\n    Mages use mana as their ressource\n    and can freeze or transform their\n    enemies directly\n" +
 			"- Paladin:\n    Paladins connect to their power of light\n    to heal themselve or fight their enemies\n    with strokes of energy\n" +
 			"===========================================\n\n")
 		Class()
-	} else {
+	default:
 		fmt.Println("Invalid input, try again\n" + "==============\n\n")
 		Class()
 	}

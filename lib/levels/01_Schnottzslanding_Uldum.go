@@ -14,10 +14,10 @@ func Schnottzslanding() {
 	_ = race
 	_ = home
 
+	// Intro
 	for i := 0; i < 100; i++ {
 		fmt.Println()
 	}
-
 	fmt.Printf("=================================\n" +
 		"    Chapter 1: The Shattering\n" +
 		"=================================\n\n" +
@@ -35,10 +35,11 @@ func Schnottzslanding() {
 		"Press enter to continue\n" +
 		"=======================\n\n\n")
 	fmt.Scanln()
+
+	// Part 1
 	for i := 0; i < 100; i++ {
 		fmt.Println()
 	}
-
 	fmt.Printf("============================================\n" +
 		"Location: 'Dry Seaheart', Schnottz's Landing\n" +
 		"============================================\n\n\n" +
@@ -55,11 +56,11 @@ func Schnottzslanding() {
 		"(press enter to sleep)\n")
 	fmt.Scanln()
 
+	// Part 2
 	for i := 0; i < 5; i++ {
 		time.Sleep(1100 * time.Millisecond)
 		fmt.Println("  ...")
 	}
-
 	fmt.Printf("\n  , ., , ., . ,. ,. ,. , ., , .\n" +
 		"~x~X~X`X~x~x`x~X~XX~X~X~x`X~X~X~X\n" +
 		"  ' `' `'`''` '` '`' `'` '`' '`'`\n\n")
