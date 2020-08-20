@@ -4,8 +4,6 @@ import (
 	"fmt"
 )
 
-var ask string
-
 // Intro to ask if Intro
 func Intro() {
 
@@ -20,14 +18,15 @@ func Intro() {
 // IntroAsk to ask
 func IntroAsk() {
 
-	fmt.Printf("[Yes | No]\n>> ")
+	var ask string
+	fmt.Printf("[1] Yes\n[2] No\n(Type the number of your answer)\n>> ")
 	fmt.Scan(&ask)
 	fmt.Printf("===========\n\n")
 
 	switch ask {
-	case "Yes":
+	case "1":
 		IntroYes()
-	case "No":
+	case "2":
 		IntroNo()
 	default:
 		fmt.Printf("Invalid input, try again\n")
@@ -84,13 +83,13 @@ func IntroYes() {
 
 // IntroQuest do
 func IntroQuest() {
-	fmt.Printf("[Accept | No]\n>> ")
+	fmt.Printf("[1] Accept\n[2] No\n>> ")
 	var quest1 string
 	fmt.Scan(&quest1)
 	switch quest1 {
-	case "Accept":
+	case "1":
 		fmt.Printf("\n")
-	case "No":
+	case "2":
 		fmt.Printf("\nWell, you have no other choice, let's try it\n" +
 			"again:\n\n")
 		IntroQuest()
@@ -130,17 +129,11 @@ func FightQuest() {
 // IntroEnd ready
 func IntroEnd() {
 	var end string
-	fmt.Printf("[Start the game | Replay Intro]\n>> ")
+	fmt.Printf("[1] Start the game\n[2] Replay Intro]\n>> ")
 	fmt.Scan(&end)
 	switch end {
-	case "Start":
-		for i := 0; i < 8; i++ {
-			fmt.Scanln()
-		}
-	case "Replay":
-		for i := 0; i < 5; i++ {
-			fmt.Scanln()
-		}
+	case "1":
+	case "2":
 		Intro()
 	default:
 		fmt.Printf("\nInvalid input, try again\n\n")
