@@ -18,8 +18,8 @@ func SilithuscoastIntro() {
 		"is already there trying to make a camp.*\n")
 	fmt.Scanln()
 	fmt.Printf("*You look up to the mountains of Silithus. The whole coast\n" +
-		"of this lands are mountains with a big desert behind these walls on the\n" +
-		"ocean. The thunderclouds scratch on the top*")
+		"of this lands are mountains with a big desert behind these\n" +
+		"walls on the ocean. The thunderclouds scratch on the top*\n")
 	fmt.Scanln()
 	fmt.Printf("")
 }

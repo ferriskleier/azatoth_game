@@ -129,7 +129,7 @@ func FightQuest() {
 // IntroEnd ready
 func IntroEnd() {
 	var end string
-	fmt.Printf("[1] Start the game\n[2] Replay Intro]\n>> ")
+	fmt.Printf("[1] Start the game\n[2] Replay Intro\n>> ")
 	fmt.Scan(&end)
 	switch end {
 	case "1":
