@@ -112,4 +112,5 @@ func Schnottzslanding02(name string) {
 	fmt.Printf("Harrison Jones:\n" +
 		"===============\n" +
 		"Alright, let's go, " + name + "\n\n")
+	fmt.Scanln()
 }

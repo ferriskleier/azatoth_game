@@ -20,4 +20,6 @@ func SilithuscoastIntro() {
 	fmt.Printf("*You look up to the mountains of Silithus. The whole coast\n" +
 		"of this lands are mountains with a big desert behind these walls on the\n" +
 		"ocean. The thunderclouds scratch on the top*")
+	fmt.Scanln()
+	fmt.Printf("")
 }
