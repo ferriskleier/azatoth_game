@@ -21,5 +21,5 @@ func SilithuscoastIntro() {
 		"of this lands are mountains with a big desert behind these\n" +
 		"walls on the ocean. The thunderclouds scratch on the top*\n")
 	fmt.Scanln()
-	fmt.Printf("")
+	fmt.Printf("test")
 }
